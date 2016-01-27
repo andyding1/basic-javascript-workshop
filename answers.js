@@ -34,3 +34,25 @@ var multiplyNumbers = function(num1,num2){
     return num1*num2;
 };
 console.log(multiplyNumbers(4,3));
+
+//Write a function that takes two numbers and a string. 
+//If the string is 'add', then return the sum of the numbers
+//If the string is 'subtract', return the difference
+//If the string is 'mult', return the product
+//If the string is 'div', return the ratio
+//Otherwise, return 0
+var operationNumbers = function(operation,num1,num2){
+    if(operation === 'add'){
+            return num1+num2;
+    }   else if(operation === 'subtract'){
+            return num1-num2;
+    }   else if(operation === 'mult'){
+            return num1*num2;
+    }   else if(operation === 'div'){
+            return num1/num2;
+    }
+    else {
+            return 0;
+    }
+};
+console.log(operationNumbers('div',49,7));
