@@ -110,3 +110,17 @@ var longestWord = function(phrase){
     return longWord;
 };
 console.log(longestWord('This is a random sentence with wordssss'));
+
+//Write a function that takes a phrase, and returns the same phrase with every word capitalized
+var capitalFirst = function(phrase){
+    var phraseArray = phrase.toLowerCase().split(" ");
+    var reconstruct = "";
+    var capitalizeWord = function(word){
+        return word[0].toUpperCase()+word.slice(1);
+    };
+    for(var i=0;i<phraseArray.length;i++){
+        reconstruct = reconstruct + capitalizeWord(phraseArray[i]) + " ";
+    }
+    return reconstruct;
+};
+console.log(capitalFirst("hI thIs is aNDY"));
