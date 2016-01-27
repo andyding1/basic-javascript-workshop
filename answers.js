@@ -178,3 +178,16 @@ var uniqueArray = function(array1,array2){
     return finalArray;
 };
 console.log(uniqueArray([1,2,3,60,4,5],[3,4,5,6]));
+
+//Mini Challenge: write a function that takes an array and a function as arguments.
+var mapArray = function(array,aFunction){
+    var newArray = [];
+    for(var i=0;i<array.length;i++){
+        newArray.push(aFunction(array[i]));
+    }
+    return newArray;
+};
+var addOne = function(num){
+    return num+1;
+};
+console.log(mapArray([1,5,10],addOne));
