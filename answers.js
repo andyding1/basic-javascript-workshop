@@ -97,3 +97,16 @@ var factorialNum = function(someNumber){
     }
 };
 console.log(factorialNum(-5));
+
+//Write a function that takes a phrase as a string, and returns the longest word in that phrase.
+var longestWord = function(phrase){
+    var phraseArray = phrase.split(" ");
+    var longWord = "";
+    for(var i=0;i<phraseArray.length;i++){
+        if(phraseArray[i].length>longWord.length){
+            longWord=phraseArray[i];
+        }
+    }
+    return longWord;
+};
+console.log(longestWord('This is a random sentence with wordssss'));
