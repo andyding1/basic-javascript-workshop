@@ -150,3 +150,13 @@ function filterByTruthyness(value) {
     }
 }
 console.log(truthyFilter([4,0,true,false,"","hello"]));
+
+//Write a function that takes an array of numbers, and returns the sum of all the numbers in the array.
+var sumArray = function(array){
+    var sum = 0;
+    for(var i=0;i<array.length;i++){
+        sum += array[i];
+    }
+    return sum;
+};
+console.log(sumArray([50,1,2,3,4]));
