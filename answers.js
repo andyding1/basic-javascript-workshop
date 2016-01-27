@@ -124,3 +124,15 @@ var capitalFirst = function(phrase){
     return reconstruct;
 };
 console.log(capitalFirst("hI thIs is aNDY"));
+
+//Write a function that takes an array and returns the largest number of the array
+var largestNumber = function(array){
+    var bigNumber = array[0];
+    for(var i=1;i<array.length;i++){
+        if(array[i]>bigNumber){
+            bigNumber=array[i];
+        }
+    }
+    return bigNumber;
+};
+console.log(largestNumber([100,20000,3,4,9000,900]));
