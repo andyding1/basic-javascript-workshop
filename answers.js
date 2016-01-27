@@ -11,3 +11,14 @@ var lastChar = function(someString){
     return someString[someString.length-1];  
 };
 console.log(lastChar("Andy"));
+
+//Write a function that takes a string and a number, and returns the character at the position represented by the number
+var inputChar = function(someString,someNumber){
+    if(someString.length<=someNumber){
+        return "The length of the string is less than the number input.";
+    }
+    else{
+        return someString[someNumber]; 
+    }
+};
+console.log(inputChar("Andy",2));
