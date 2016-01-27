@@ -66,3 +66,13 @@ var repeatString = function(someString,numRepeat){
     return aString;
 };
 console.log(repeatString('hi',5));
+
+//Write a function that takes a string, and returns the reverse of that string.
+var reverseString = function(someString){
+    var aString = "";
+    for(var i=someString.length-1;i>=0;i--){
+        aString += someString[i];
+    }
+    return aString;
+};
+console.log(reverseString('supercalifragilisticexpialidocious'));
