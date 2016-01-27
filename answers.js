@@ -76,3 +76,24 @@ var reverseString = function(someString){
     return aString;
 };
 console.log(reverseString('supercalifragilisticexpialidocious'));
+
+//Write a function that takes a number and returns the factorial of a number
+var factorialNum = function(someNumber){
+    var aNumber = 1;
+    if(someNumber === 0){
+            return 1;
+    }
+    else if(someNumber > 0){
+        for(var i=someNumber;i>0;i--){
+            aNumber = aNumber * i;
+        }
+        return aNumber;
+    }
+    else{
+        for(var i=someNumber;i<0;i++){
+            aNumber = aNumber * i;
+        }
+        return aNumber;
+    }
+};
+console.log(factorialNum(-5));
