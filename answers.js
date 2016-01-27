@@ -160,3 +160,21 @@ var sumArray = function(array){
     return sum;
 };
 console.log(sumArray([50,1,2,3,4]));
+
+//Write a function that takes two arrays, and returns an array of all elements that are only in one array.
+var uniqueArray = function(array1,array2){
+    var finalArray = [];
+    for(var i=0;i<array1.length;i++){
+        if(array2.indexOf(array1[i])<0){
+            finalArray.push(array1[i]);
+        }
+    }
+        
+    for(var m=0;m<array2.length;m++){
+        if(array1.indexOf(array2[m])<0){
+            finalArray.push(array2[m]);
+        }
+    }
+    return finalArray;
+};
+console.log(uniqueArray([1,2,3,60,4,5],[3,4,5,6]));
