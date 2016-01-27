@@ -96,6 +96,16 @@ var factorialNum = function(someNumber){
         return aNumber;
     }
 };
+
+function factorial2(n) {
+    if (n === 0) {
+        return 1;
+    }
+    else if (someNumber < 0) {
+        return undefined;
+    }
+    return n*factorial2(n-1);
+}
 //console.log(factorialNum(-5));
 
 //Write a function that takes a phrase as a string, and returns the longest word in that phrase.
