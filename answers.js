@@ -22,3 +22,15 @@ var inputChar = function(someString,someNumber){
     }
 };
 console.log(inputChar("Andy",2));
+
+//Write a function that takes two numbers and adds them together.
+var addNumbers = function(num1,num2){
+    return num1+num2;
+};
+console.log(addNumbers(25,26));
+
+//Write a function that takes two numbers and multiplies them together
+var multiplyNumbers = function(num1,num2){
+    return num1*num2;
+};
+console.log(multiplyNumbers(4,3));
