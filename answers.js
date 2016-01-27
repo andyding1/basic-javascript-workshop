@@ -136,3 +136,17 @@ var largestNumber = function(array){
     return bigNumber;
 };
 console.log(largestNumber([100,20000,3,4,9000,900]));
+
+//Write a function that takes an array, and returns a filtered array. The filtered array should contain only the truthy values from the initial array.
+var truthyFilter = function(array){
+    var newArray=array.filter(filterByTruthyness);
+    return newArray;
+};
+function filterByTruthyness(value) {
+    if (value) {
+        return true;
+    } else {
+        return false;
+    }
+}
+console.log(truthyFilter([4,0,true,false,"","hello"]));
