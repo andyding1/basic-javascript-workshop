@@ -56,3 +56,13 @@ var operationNumbers = function(operation,num1,num2){
     }
 };
 console.log(operationNumbers('div',49,7));
+
+//Write a function that takes a string and number, and returns the string repeated that many number of times.
+var repeatString = function(someString,numRepeat){
+    var aString = "";
+    for(var i=0;i<numRepeat;i++){
+        aString = aString + someString + " ";
+    }
+    return aString;
+};
+console.log(repeatString('hi',5));
