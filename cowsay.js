@@ -1,5 +1,4 @@
 var cow = "        \\   ^__^\n         \\  (oo)\\_______\n            (__)\\       )\\/\n                ||----w |\n                ||     ||";
-//console.log(cow);
 
 var quote1 = "The best preparation for tomorrow is doing your best today.";
 var quote2 = "Start by doing what's necessary; then do what's possible; and suddenly you are doing.";
@@ -19,15 +18,38 @@ function randomQuote() {
     return quoteToUse;
 }
 
+var quote = randomQuote();
+
+/*
 var wrapAround = function(){
-    var quote = randomQuote();
     var quoteArray = quote.split(" ");
     var reconstruct = "";
+    var newArray = [];
     for(var i=0;i<quoteArray.length;i++){
-        reconstruct += quoteArray[i] + " ";
-        if(reconstruct)
+        if(reconstruct.length<30){
+            reconstruct += quoteArray[i] + " ";
+        }
+        else {
+            break;
+        }
     }
     return reconstruct;
 };
 
 console.log(wrapAround());
+console.log(wrapAround().length);
+*/
+
+var quoteArray = quote.split(" ");
+var chunks = [];
+
+var formatQuote = "";
+
+for (var i = 0; i < quote.length; i += 30) {
+    chunks.push(quote.substring(i, i + 30));
+}
+for (var i = 0; i < chunks.length; i++){
+    formatQuote += chunks[i] + "\n";
+}
+console.log(formatQuote);
+console.log(cow);
